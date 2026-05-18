@@ -8,7 +8,7 @@ function WhiteLabelConfigPage() {
   const [isReadingLogo, setIsReadingLogo] = useState(false)
 
   useEffect(() => {
-    document.title = 'White-label Config | RealNov8'
+    document.title = 'White-label Config | Zoqueda ROI'
   }, [])
 
   function handleFieldChange(event) {
@@ -132,7 +132,7 @@ function WhiteLabelConfigPage() {
 
           <div className="flex flex-col gap-3 pt-2 sm:flex-row">
             <button className="button-primary" type="button" onClick={resetConfig}>
-              Reset to RealNov8 defaults
+              Reset to Zoqueda defaults
             </button>
           </div>
         </div>

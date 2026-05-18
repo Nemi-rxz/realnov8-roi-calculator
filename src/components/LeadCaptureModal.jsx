@@ -105,7 +105,7 @@ function LeadCaptureModal({ isOpen, onClose, propertyData, agentConfig }) {
         </div>
 
         {submissionState === 'success' ? (
-          <div className="mt-8 rounded-[12px] border border-[var(--color-border)] bg-[var(--color-gold-light)] p-6">
+          <div className="mt-8 rounded-[12px] border border-[rgba(15,138,76,0.22)] bg-[var(--color-success-light)] p-6">
             <p className="font-[var(--font-editorial)] text-4xl font-bold text-[var(--color-ink)]">
               Thank you
             </p>

@@ -61,7 +61,7 @@ function ProjectionChart({ data }) {
                 color: 'var(--color-ink)',
                 fontFamily: 'var(--font-ui)',
               }}
-              cursor={{ fill: '#f5f0e8' }}
+              cursor={{ fill: '#eff6ff' }}
               formatter={(value) => [formatFullCurrency(value), 'Projected value']}
               labelStyle={{ color: 'var(--color-ink)', fontWeight: 600 }}
             />

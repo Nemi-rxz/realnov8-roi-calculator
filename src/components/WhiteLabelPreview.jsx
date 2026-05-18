@@ -17,7 +17,7 @@ function WhiteLabelPreview({ config }) {
               className="flex h-11 w-11 items-center justify-center rounded-[8px] border border-[rgba(255,255,255,0.16)]"
               style={{ color: config.accentColor }}
             >
-              R
+              Z
             </div>
           )}
           <div>
@@ -47,11 +47,11 @@ function WhiteLabelPreview({ config }) {
         </p>
       </div>
 
-      <div className="mt-6 rounded-[12px] border border-[var(--color-border)] bg-[var(--color-gold-light)] p-5">
+      <div className="mt-6 rounded-[12px] border border-[var(--color-border)] bg-[var(--color-surface-soft)] p-5">
         <p className="section-label">Footer Preview</p>
         <p className="mt-3 text-sm text-[var(--color-secondary)]">{config.footerText}</p>
         <p className="mt-2 text-sm text-[var(--color-secondary)]">
-          {config.agentName || 'Agent name'} {config.agentEmail ? `• ${config.agentEmail}` : ''}
+          {config.agentName || 'Agent name'} {config.agentEmail ? `- ${config.agentEmail}` : ''}
         </p>
       </div>
     </section>

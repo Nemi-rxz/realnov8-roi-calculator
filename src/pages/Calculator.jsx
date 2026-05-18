@@ -89,7 +89,7 @@ function Calculator() {
   const pdfReportRef = useRef(null)
 
   useEffect(() => {
-    document.title = 'RealNov8 ROI Calculator'
+    document.title = 'Zoqueda ROI Calculator'
   }, [])
 
   useEffect(() => {
@@ -224,9 +224,9 @@ function Calculator() {
   return (
     <section className="space-y-6">
       <div className="editorial-panel">
-        <p className="section-label text-[rgba(255,255,255,0.5)]">Calculator</p>
-        <h1 className="mt-3 max-w-3xl text-4xl font-bold text-[var(--color-page-bg)] sm:text-5xl">
-          Analyse property returns with a warm, client-ready ROI workflow.
+        <p className="section-label text-white">Calculator</p>
+        <h1 className="mt-3 max-w-3xl text-4xl font-bold text-white sm:text-5xl">
+          Analyze property returns with a precise, client-ready Zoqueda ROI workflow.
         </h1>
         <p className="mt-4 max-w-2xl text-sm text-[rgba(255,255,255,0.72)] sm:text-base">
           Enter the property details and income assumptions to reveal investment
@@ -355,7 +355,6 @@ function Calculator() {
               <button
                 className="button-primary hidden sm:inline-flex"
                 disabled={isExportingPDF}
-                style={{ backgroundColor: config.accentColor, borderColor: config.accentColor, color: 'var(--color-ink)' }}
                 type="button"
                 onClick={handleExportPDF}
               >
@@ -391,7 +390,7 @@ function Calculator() {
           <div className="pdf-report" id="pdf-report" ref={pdfReportRef}>
             <header className="pdf-report-masthead">
               <div>
-                <p className="pdf-report-brand">{config.companyName || 'RealNov8'}</p>
+                <p className="pdf-report-brand">{config.companyName || 'Zoqueda ROI'}</p>
                 <p className="pdf-report-tagline">Professional property investment analysis</p>
               </div>
             </header>
@@ -446,7 +445,7 @@ function Calculator() {
               <div className="mt-6 overflow-hidden rounded-[8px] border border-[var(--color-border)]">
                 <table className="w-full border-collapse">
                   <thead>
-                    <tr className="bg-[#f5f0e8]">
+                    <tr className="bg-[var(--color-surface-soft)]">
                       <th className="breakdown-head text-left">Year</th>
                       <th className="breakdown-head text-right">Projected value</th>
                       <th className="breakdown-head text-right">Appreciation</th>
@@ -474,7 +473,7 @@ function Calculator() {
               <p className="mt-2 text-[14px] text-[var(--color-secondary)]">
                 {config.agentEmail || config.agentPhone
                   ? [config.agentEmail, config.agentPhone].filter(Boolean).join(' | ')
-                  : 'Powered by RealNov8'}
+                  : 'Powered by Zoqueda UI'}
               </p>
             </footer>
           </div>

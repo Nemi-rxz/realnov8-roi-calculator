@@ -12,7 +12,7 @@ export async function exportPDFReport({
   ])
 
   const canvas = await html2canvas(element, {
-    backgroundColor: '#faf7f2',
+    backgroundColor: '#f7f7f8',
     scale: 2,
     useCORS: true,
   })

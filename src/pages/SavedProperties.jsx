@@ -21,7 +21,7 @@ function SavedPropertiesPage() {
   const [selectedIds, setSelectedIds] = useState([])
 
   useEffect(() => {
-    document.title = 'Saved Properties | RealNov8'
+    document.title = 'Saved Properties | Zoqueda ROI'
   }, [])
 
   const selectedProperties = useMemo(
@@ -81,7 +81,7 @@ function SavedPropertiesPage() {
           <div className="mt-6 overflow-x-auto">
             <table className="w-full min-w-[720px] border-collapse">
               <thead>
-                <tr className="bg-[#f5f0e8]">
+                <tr className="bg-[var(--color-surface-soft)]">
                   <th className="breakdown-head text-left">Metric</th>
                   {selectedProperties.map((property) => (
                     <th key={`head-${property.id}`} className="breakdown-head text-right">

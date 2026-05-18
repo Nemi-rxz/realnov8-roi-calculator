@@ -8,7 +8,7 @@ function BreakdownTable({ rows, formatCurrency }) {
       <div className="mt-6 overflow-hidden rounded-[8px] border border-[var(--color-border)]">
         <table className="w-full border-collapse">
           <thead>
-            <tr className="bg-[#f5f0e8]">
+            <tr className="bg-[var(--color-surface-soft)]">
               <th className="breakdown-head text-left">Line item</th>
               <th className="breakdown-head text-right">Monthly amount</th>
             </tr>

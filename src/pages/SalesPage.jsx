@@ -26,7 +26,7 @@ const pricingTiers = [
     description: 'A public-facing ROI calculator for lead generation and fast first-pass analysis.',
     features: [
       'Calculator only',
-      'RealNov8 branding',
+      'Zoqueda UI branding',
       'No PDF export',
       'No saved properties',
     ],
@@ -43,7 +43,7 @@ const pricingTiers = [
       'PDF export',
       'Save up to 20 properties',
       'Lead capture',
-      'Remove RealNov8 branding',
+      'Remove Zoqueda UI branding',
     ],
   },
   {
@@ -64,7 +64,7 @@ const pricingTiers = [
 
 const comparisonRows = [
   ['Calculator access', 'Yes', 'Yes', 'Yes'],
-  ['RealNov8 branding removed', 'No', 'Yes', 'Yes'],
+  ['Zoqueda UI branding removed', 'No', 'Yes', 'Yes'],
   ['PDF export', 'No', 'Yes', 'Yes'],
   ['Saved properties', 'No', '20 properties', 'Unlimited'],
   ['Lead capture emails', 'No', 'Yes', 'Yes'],
@@ -92,7 +92,7 @@ function PricingPage() {
   const { config } = useWhiteLabel()
 
   useEffect(() => {
-    document.title = 'Pricing | RealNov8'
+    document.title = 'Pricing | Zoqueda ROI'
   }, [])
 
   return (
@@ -100,15 +100,15 @@ function PricingPage() {
       <section className="sales-hero">
         <div className="grid gap-8 xl:grid-cols-[1.05fr_0.95fr] xl:items-center">
           <div>
-            <p className="section-label text-[rgba(255,255,255,0.5)]">Pricing</p>
-            <h1 className="mt-3 max-w-4xl text-5xl font-bold text-[var(--color-page-bg)] sm:text-6xl">
+            <p className="section-label text-white">Pricing</p>
+            <h1 className="mt-3 max-w-4xl text-5xl font-bold text-white sm:text-6xl">
               The ROI calculator your clients will trust and your competitors do not have
             </h1>
             <p className="mt-5 max-w-2xl text-base text-[rgba(255,255,255,0.72)] sm:text-lg">
               Built for real estate professionals who want sharper conversations, better-looking analysis, and a branded experience clients actually remember.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link className="button-primary" style={{ backgroundColor: 'var(--color-accent)', borderColor: 'var(--color-accent)', color: 'var(--color-ink)' }} to="/">
+              <Link className="button-primary" to="/">
                 Try the calculator free
               </Link>
               <a className="button-secondary" href="#pricing-tiers">
@@ -137,7 +137,7 @@ function PricingPage() {
                   <div className="mt-4 grid gap-3">
                     <div className="sales-preview-metric sales-preview-metric-dark">
                       <span className="section-label text-[rgba(255,255,255,0.58)]">Annual ROI</span>
-                      <span className="sales-preview-number" style={{ color: config.accentColor }}>
+                      <span className="sales-preview-number text-[var(--color-accent)]">
                         12.4%
                       </span>
                     </div>
@@ -201,7 +201,7 @@ function PricingPage() {
         <div className="mt-6 overflow-x-auto">
           <table className="w-full min-w-[760px] border-collapse">
             <thead>
-              <tr className="bg-[#f5f0e8]">
+              <tr className="bg-[var(--color-surface-soft)]">
                 <th className="breakdown-head text-left">Feature</th>
                 <th className="breakdown-head text-right">Free</th>
                 <th className="breakdown-head text-right">Pro</th>
@@ -226,7 +226,7 @@ function PricingPage() {
         <p className="section-label">Built For Real Estate Professionals</p>
         <div className="mt-6 grid gap-4 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
-            <article key={testimonial.author} className="rounded-[12px] border border-[var(--color-border)] bg-[var(--color-gold-light)] p-5">
+            <article key={testimonial.author} className="rounded-[12px] border border-[var(--color-border)] bg-[var(--color-surface-soft)] p-5">
               <p className="font-[var(--font-editorial)] text-3xl leading-tight text-[var(--color-ink)]">
                 "{testimonial.quote}"
               </p>
@@ -240,14 +240,14 @@ function PricingPage() {
         <p className="section-label text-[rgba(255,255,255,0.5)]">Get Started</p>
         <div className="mt-4 flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <h2 className="max-w-3xl text-4xl font-bold text-[var(--color-accent)] sm:text-5xl">
+            <h2 className="max-w-3xl text-4xl font-bold text-white sm:text-5xl">
               Bring a premium ROI experience into your agency before someone else does
             </h2>
             <p className="mt-4 max-w-2xl text-sm text-[rgba(255,255,255,0.72)] sm:text-base">
               Start free, upgrade when your team is ready, and tailor the full experience to your brand.
             </p>
           </div>
-          <Link className="button-primary" style={{ backgroundColor: 'var(--color-accent)', borderColor: 'var(--color-accent)', color: 'var(--color-ink)' }} to="/">
+          <Link className="button-primary" to="/">
             Get started free
           </Link>
         </div>

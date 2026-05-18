@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { createContext, createElement, useContext, useEffect, useMemo, useState } from 'react'
 import { themeTokens } from '../theme/tokens'
 
-const WHITE_LABEL_STORAGE_KEY = 'realnov8_whitelabel'
+const WHITE_LABEL_STORAGE_KEY = 'zoqueda_roi_orange_green_whitelabel'
 
 const defaultWhiteLabelConfig = {
   companyName: themeTokens.brand.name,
@@ -54,7 +54,7 @@ export function WhiteLabelProvider({ children }) {
   }, [config])
 
   useEffect(() => {
-    document.documentElement.style.setProperty('--color-accent', config.accentColor)
+    document.documentElement.style.setProperty('--brand-accent', config.accentColor)
   }, [config.accentColor])
 
   const value = useMemo(
